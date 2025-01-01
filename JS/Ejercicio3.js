@@ -8,7 +8,7 @@ for (let i = 0; i < 50; i++) {
     
 }
 console.log(sumas);
-
+//mostrar en consola cada tirada con su correspondiente suma
 sumas.forEach((suma, index)=>{
     console.log(`Tirada N° ${index + 1 } // Suma:`);
     

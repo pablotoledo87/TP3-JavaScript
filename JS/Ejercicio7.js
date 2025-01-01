@@ -4,7 +4,7 @@ function tablaMultiplicar (numero){
 
         return;
     } 
-    document.write(`<ta border = "1" cellspacing = "0"> 
+    document.write(`<table border = "1" cellspacing = "0" cellspadding='5'> 
         <thead>
         <tr>
         <th colspan="2">
@@ -13,12 +13,19 @@ function tablaMultiplicar (numero){
         </tr>
         </thead>
         <tbody>`)
-        for (let i = 0; i <= 10; i++) {
-            document.write(``)
+        for (let i = 1; i <= 10; i++) {
+           document.write(
+            `<tr>
+            <td>${numero}*${i}</td>
+            <td>${numero *i}</td>
+            </tr>`
+           )
             
         }
+        document.write(`</tbody>
+            </table>`)
 }
 
-let numero = parseInt(prompt('Ingrese un numero para mostrar una tabla de multiplicar'))
+let number = parseInt(prompt('Ingrese un numero para mostrar una tabla de multiplicar'))
 
-tablaMultiplicar(numer)
+tablaMultiplicar(number)
